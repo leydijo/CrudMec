@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Student</title>
+    <link rel="stylesheet" href="/Styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-login">
+        <h2 class="center-button">Agregar Estudiantes</h2>
+        <div id="message"></div>
+        <form id="createStudent">
+            <div class="mb-3">
+                <label for="nameInputText" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nameInputText" aria-describedby="userHelp" required>
+            </div>
+            <div class="mb-3">
+                <label for="lastNameInputText" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="lastNameInputText" aria-describedby="userHelp" required>
+            </div>
+            <div class="mb-3">
+                <label for="emailInputEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="emailInputEmail" aria-describedby="userHelp" required>
+            </div>
+            <div class="mb-3">
+                <label for="dateOfBirthInputDate" class="form-label">Fecha Nacimiento</label>
+                <input type="date" class="form-control" id="dateOfBirthInputDate" aria-describedby="userHelp" required>
+            </div>
+            <div class="mb-3">
+                <label for="phoneInputText" class="form-label">Telefono</label>
+                <input type="text" class="form-control" id="phoneInputText" aria-describedby="userHelp" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="profile" class="form-label">Perfil</label>
+                <input type="text" class="form-control" id="profile" aria-describedby="userHelp" required>
+            </div>
+
+            <div id="matterCheckDefault">
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Crear</button>
+        </form>
+    </div>
+    <script src="/Index.js"></script>
+</body>
+</html>
